@@ -1,0 +1,1 @@
+<h4>Thank you for contacting us Mr/Miss {{ $contact->name }}. We will get back to you soon.</h4>

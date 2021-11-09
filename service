@@ -1,0 +1,489 @@
+[33mcommit 6b84f1e60a5bc4ad0a27c35b514001f853aa53a2[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Mon Mar 1 18:02:57 2021 +0545
+
+    Service Section make Dynamic
+
+[33mcommit 28ccc496f4d17b0a4babe0dea8c3dde05e305667[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Mon Mar 1 16:19:23 2021 +0545
+
+    Menu-section Manage
+
+[33mcommit 8d4abcb070c53dc90b384ac4866028fccb126745[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Mon Mar 1 15:39:08 2021 +0545
+
+    Menu bar Section
+
+[33mcommit f0561d57ec96253a239b63ac2f13c4a92a5d340f[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Mon Mar 1 14:04:52 2021 +0545
+
+    Dynamic footer added
+
+[33mcommit 88704e46fbf9c37348e4eb78d7e10fd610d44d13[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Fri Feb 26 17:08:44 2021 +0545
+
+    career panel completed
+
+[33mcommit f9eddadb92c164617475d11fec29e27b06d2eab4[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Fri Feb 26 15:41:21 2021 +0545
+
+    service message can delete
+
+[33mcommit a58e5d58ecfcb45c778ebecc9b98ba1d4cbd127d[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Fri Feb 26 15:27:42 2021 +0545
+
+    service message unseen done
+
+[33mcommit fc9e1cdc231f269db38fc88f8eec7fc34d8aace7[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Fri Feb 26 15:24:03 2021 +0545
+
+    career message unseen done
+
+[33mcommit 943341e3cfb17324b6fc481abc21d2a1afb6fe97[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Fri Feb 26 14:53:33 2021 +0545
+
+    career enquiry image folder added
+
+[33mcommit 475f0138099b8b8f6eae19b46daf897e4739c20e[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Fri Feb 26 14:38:43 2021 +0545
+
+    enquiry form completed
+
+[33mcommit 75abe275e440673af2a1bcf9663c9fe2ba038ffa[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Fri Feb 26 12:33:39 2021 +0545
+
+    Service Enquiry Form added
+
+[33mcommit 6c774a5b5ee707932619a7cfc2d1353d32a87a79[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Thu Feb 25 17:06:15 2021 +0545
+
+    CareerController manage
+
+[33mcommit b32aee76049296d4be9750f57e3d720995e565a9[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Thu Feb 25 15:01:05 2021 +0545
+
+    Dynamic Banner image added
+
+[33mcommit 2c5f4f3d06bd9c5114ab0da076f9fa8e44fd1e08[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Thu Feb 25 14:08:20 2021 +0545
+
+    role filter panel modified
+
+[33mcommit 003a851097f2f53a7d54e507c4ed87fa2d0a1815[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Thu Feb 25 12:50:24 2021 +0545
+
+    general_form managed
+
+[33mcommit 9588e5b66684a1943cb2a9900cd1b6a47b5de93a[m
+Author: Deepak khadka <rozankhadka159@gmail.com>
+Date:   Thu Feb 25 10:48:26 2021 +0545
+
+    Banner-images added
+
+[33mcommit 763b698c98e49646f6e11421628aea23cb5d9f9b[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Wed Feb 24 16:05:54 2021 +0545
+
+    Dashboard Controller manage
+
+[33mcommit da5520744cd2e0017abeddcdf561844f5fd097a0[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Wed Feb 24 15:39:56 2021 +0545
+
+    career frontend page managed
+
+[33mcommit 7f930206bfdaec1faa8e4a440daf0de043fb5c7f[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Wed Feb 24 13:47:28 2021 +0545
+
+    Career admin panel finished
+
+[33mcommit e5b1e9521b6a39d6c70c993ea85030b1dc4ff74a[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 23 18:26:20 2021 +0545
+
+    Career Panel --WIP
+
+[33mcommit 8016e829dbddb109c77eaf0da32dc6a4bcb70b48[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 23 16:01:45 2021 +0545
+
+    Service Managed
+
+[33mcommit 7bd72027ca32719026fa30c4a9441a5f41bbe1eb[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 23 14:21:53 2021 +0545
+
+    Sweet-alert included
+
+[33mcommit 2916f904a2d78d6d96fac5eba75e7ad941184269[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 23 11:18:11 2021 +0545
+
+    About-us quote added
+
+[33mcommit 32b1ce8125a7ad391b3bdbe33389618f36c74679[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 15 16:36:56 2021 +0545
+
+    Contact-us Form Changed
+
+[33mcommit 3dc3fa8b668a4fd9a2439d457613d746a057c2bd[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 15 16:16:57 2021 +0545
+
+    Frontend Service Detail Completed
+
+[33mcommit 654d2a85ef61ee3517270d11967f266f641f7062[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 15 13:36:11 2021 +0545
+
+    Frontend Service Section Changed
+
+[33mcommit 024619f30592dca71ad1f5e0c95fbca15fe34b16[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 15 10:36:46 2021 +0545
+
+    Blog-category --WIP
+
+[33mcommit a6d8e76b0f1d4d4bfc016a55fe6c58a873f5808e[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 15 09:56:29 2021 +0545
+
+    Career Section -WIP
+
+[33mcommit 5fa86d0adda877e31776c6d6140b8cdfad769b5c[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Fri Feb 12 20:35:34 2021 +0545
+
+    Why us Section view page manage
+
+[33mcommit 29128ee9b79c26ac83533848a7db44c4af63b63b[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Fri Feb 12 15:36:23 2021 +0545
+
+    Contact Us Page detail changed
+
+[33mcommit 6be0d4451e4d89f85bb5d9227d4b06e06f0dd0fb[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Fri Feb 12 15:18:19 2021 +0545
+
+    Contact Us Page Added
+
+[33mcommit fa52056ab59ab8099c8a70fe4b95156f113f4188[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Fri Feb 12 14:57:29 2021 +0545
+
+    Client Review Home Page Added
+
+[33mcommit 8592b7e7032ee138a3fe45301bad5dc4b12c219e[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Fri Feb 12 14:01:28 2021 +0545
+
+    Development Process sidebar added
+
+[33mcommit f9c9a080646abaaebe80bbffabb40ee54daa3d14[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Fri Feb 12 13:58:42 2021 +0545
+
+    Development Process Panel Added
+
+[33mcommit 4a309f7945f96c150978bc6bf972410ea2bbbd12[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 19:02:15 2021 +0545
+
+    Dropify Added in Testimonial
+
+[33mcommit fd89a4fe44a26c559ef69161574b8c9a00d4d1be[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 18:56:13 2021 +0545
+
+    Dropify Added in Our Technologies
+
+[33mcommit c5763126e5ced90a631e6cc299f4fa6991f7194b[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 18:51:36 2021 +0545
+
+    Dropify Added in why-us
+
+[33mcommit 55ae449c539d9271fbc8db609ab2ae9a4a7142e3[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 18:49:32 2021 +0545
+
+    Dropify Added in About-us
+
+[33mcommit 35ced11aa391eb9606a460609d6ec6d8d733d8d8[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 18:47:00 2021 +0545
+
+    Dropify Added in Clients
+
+[33mcommit c639cee1e2b9d873d9859d8453264bdfb2934548[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 18:41:32 2021 +0545
+
+    Dropify implemented
+
+[33mcommit 83b069869b38722f8de59abb59109abe62a1267e[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 16:55:50 2021 +0545
+
+    breadcrumb section added
+
+[33mcommit 1ae110c482d603ffe42fffbe478bee37b7fb3b51[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 16:32:24 2021 +0545
+
+    about-us and our-team user page manage
+
+[33mcommit eace294c06d9d774ee334aa9ba639bfbdf073487[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 15:54:50 2021 +0545
+
+    Status Button Added
+
+[33mcommit af515737e5060cc044ef7f9c826dcc5b7e9ee693[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 15:48:38 2021 +0545
+
+    Subscribe Panel Stored
+
+[33mcommit da91e6a50f6b3ae522c3f9b2229f25156da8ce0d[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Thu Feb 11 15:31:35 2021 +0545
+
+    Contact Submit from Homepage
+
+[33mcommit 7e6c4a6fadbf74651a9192d9b82a55bb9a205136[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Wed Feb 10 18:39:54 2021 +0545
+
+    Contact Us --WIP
+
+[33mcommit 88bb60690ac848bfaabb01f3a26c110b4da2d650[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Wed Feb 10 18:32:18 2021 +0545
+
+    Testimonial and Config site manage
+
+[33mcommit 091f103cbc8d77ede9d0749cd2fa830c261ec36a[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Wed Feb 10 17:45:45 2021 +0545
+
+    Industries Panel --WIP
+
+[33mcommit 75ebf4b131d4e8a1a93176cb416223c0d5106a4e[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 9 18:23:22 2021 +0545
+
+    Dynamic section for homepage
+
+[33mcommit d640c068321cad518beab9eec31f6fa8d3882c62[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 9 15:02:01 2021 +0545
+
+    Frontend HomePage Scection divide
+
+[33mcommit 8853ee4aa5d49ca75c7e417aa56d31e46c78633b[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Fri Feb 5 16:54:10 2021 +0545
+
+    Frontend Home Page Manage
+
+[33mcommit 6351b756c184ec5b3e78359e4993024787bdf256[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 2 18:28:12 2021 +0545
+
+    Our Work Complete
+
+[33mcommit 01b6c4d394a106624078c1a6d110a5267b199b0b[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Tue Feb 2 16:02:25 2021 +0545
+
+    Frontend manage in HomeController
+    
+    Services are created
+    user home page manage
+
+[33mcommit 8c7087b452aae5b64a2a3432c059012e18e2d1d3[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 1 18:26:04 2021 +0545
+
+    WhyUs Section Complete
+
+[33mcommit 4da5cedc3026806d3e00957d064a265650ba463e[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 1 16:32:24 2021 +0545
+
+    Our-Team Manage sorting
+
+[33mcommit a2a74707a83673a322c7120857e6c96a3cba9cbd[m
+Author: Deepak <deepakkhadka@neputer.com>
+Date:   Mon Feb 1 15:36:21 2021 +0545
+
+    Our-Team CRUD completed
+
+[33mcommit bae513bd448a3760a1f230efcb293baa7a834b51[m
+Author: Deepak <rozankhadka159@gmail.com>
+Date:   Mon Feb 1 15:08:38 2021 +0545
+
+    Our-Team CRUD completed
+
+[33mcommit 6f9064b3bd7d685c0430646440917b7a3915d16c[m
+Author: Deepak <rozankhadka159@gmail.com>
+Date:   Fri Jan 29 18:19:24 2021 +0545
+
+    create issue solved
+
+[33mcommit b560299099f49bb71f9694342f98436756a54d18[m
+Author: Deepak <rozankhadka159@gmail.com>
+Date:   Fri Jan 29 17:40:17 2021 +0545
+
+    Service Form manage
+
+[33mcommit f2fb8e12b096d4fc5e6e13ff38d87d25d84d430e[m
+Author: Deepak <rozankhadka159@gmail.com>
+Date:   Fri Jan 29 16:56:27 2021 +0545
+
+    Frontend Page Managed
+    Home, About and Service Page implemented
+
+[33mcommit 8fcf2e08fddcaeedb40bc10150a716d576eabd2a[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Thu Aug 27 12:03:14 2020 +0545
+
+    Remove all unwanted panels backend
+
+[33mcommit 290bc0c5ccd823cfa67eebdc714aa54ebba26c38[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Thu Aug 27 09:32:56 2020 +0545
+
+    Manage title for all admin pages
+
+[33mcommit eb1b7bc0324f9cadae88e6167411621fa7212847[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Wed Aug 26 12:44:19 2020 +0545
+
+    Add testimonial panels
+
+[33mcommit d46f6ce430657fa156d80340b400ed2fbbeec390[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Wed Aug 26 11:51:04 2020 +0545
+
+    Add technology panel
+
+[33mcommit 39e574456c530a6fd3a6445140b2013460a72112[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Wed Aug 26 11:10:07 2020 +0545
+
+    Add our skills panel
+
+[33mcommit bc65710c8f0fb687d8a51f7c13199f52ffd62f94[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Wed Aug 26 10:28:09 2020 +0545
+
+    Add child service panel
+
+[33mcommit c6813c72280a77303b592696c3be2100f45f3644[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Wed Aug 26 10:01:46 2020 +0545
+
+    Add service panel
+
+[33mcommit eda6ae04dabc0810c7d521bad574a970c9d6c058[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 14:59:53 2020 +0545
+
+    Add portfolio panel
+
+[33mcommit a434a7e1d3d7c326e127c9dd39932d255a37d3d5[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 14:32:42 2020 +0545
+
+    Add portfolio category
+
+[33mcommit 5d71e1075b6d079f3d1daf254c2bb24f49c7fe7e[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 14:11:28 2020 +0545
+
+    Add company story panel
+
+[33mcommit c1218dc3246c0f54bffbc1dd47c9302878248f3f[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 13:41:56 2020 +0545
+
+    Manage order clients
+
+[33mcommit 2622b6fd232f7063e5e07f925e3ea112602b5541[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 13:25:38 2020 +0545
+
+    Add client panel
+
+[33mcommit 17935872d9136479879e92f917fbedf04cc2d651[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 12:44:52 2020 +0545
+
+    Fix issue for image size, add edit button in view, date piker if form of blog panel
+
+[33mcommit 4545b9ac803d2c99e687d164ef3b084fe30d695e[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 12:14:02 2020 +0545
+
+    Add manage order for blog category
+
+[33mcommit 1fba4e3334c4819d5f5ebe294c838df844a12370[m
+Author: Santosh Sangachhen <santosh@neputer.com>
+Date:   Tue Aug 25 11:30:13 2020 +0545
+
+    Correct image name in blog category
+
+[33mcommit 01bd90468ddd1e6990717423aa09a6391efb173a[m
+Author: Rupesh Dahal <rupesh@neputer.com>
+Date:   Thu Aug 20 11:25:14 2020 +0545
+
+    Blog Category done
+
+[33mcommit 3991032f0874d92aebb7640090296844b75a85cb[m
+Author: Rupesh Dahal <rupesh@neputer.com>
+Date:   Tue Aug 18 13:47:18 2020 +0545
+
+    Controllers and Requests Done
+
+[33mcommit 732971449d0b6a2f6c85131d37328c26dc0c5aa6[m
+Author: Rupesh Dahal <rupesh@neputer.com>
+Date:   Mon Aug 17 13:47:51 2020 +0545
+
+    Make models
+
+[33mcommit 4fb1c3c5679069734d2aea3eda62d77e477f7225[m
+Author: Rupesh Dahal <rupesh@neputer.com>
+Date:   Fri Aug 14 18:23:10 2020 +0545
+
+    New branch
+
+[33mcommit 460a283636a7dd83a5bbba621f8d345a4c6bc41d[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Rupesh Dahal <rupesh@neputer.com>
+Date:   Fri Aug 14 18:19:06 2020 +0545
+
+    Make migration for site:
+
+[33mcommit b74c5526d964411b85d68f6ecbd35f36f08d02ac[m
+Author: Rupesh Dahal <rupesh@neputer.com>
+Date:   Fri Aug 14 15:22:03 2020 +0545
+
+    Initial commit
