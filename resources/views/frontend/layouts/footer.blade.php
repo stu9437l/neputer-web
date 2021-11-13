@@ -26,7 +26,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-sm-6  ftr-brand-pp">
                     <a class="navbar-brand mb30 mt30" href="#">
-                        <img src="@if(isset($_settings['neputer_logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['neputer_logo']) }} @endif" alt="Neputer Logo" width="100">
+                        <img src="@if(isset($_settings['logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['logo']) }} @endif" alt="Neputer Logo" width="100">
                     </a>
                  {!!  $_settings['footer_1'] ?? 'Footer 1' !!}
                 </div>
