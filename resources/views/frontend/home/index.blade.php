@@ -1,5 +1,6 @@
 @extends('frontend.layouts.master')
 
+@section('title', 'Homepage')
 
 @section('content')
 
@@ -31,15 +32,16 @@
     @include('frontend.home.Section.contact-now')
 
     <!--End Location-->
-
-
+    
 @endsection
 
 @push('js')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js" integrity="sha512-eviLb3jW7+OaVLz5N3B5F0hpluwkLb8wTXHOTy0CyNaZM5IlShxX1nEbODak/C0k9UdsrWjqIBKOFY0ELCCArw==" crossorigin="anonymous"></script>    @include('admin.include.formValidation')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"
+            integrity="sha512-eviLb3jW7+OaVLz5N3B5F0hpluwkLb8wTXHOTy0CyNaZM5IlShxX1nEbODak/C0k9UdsrWjqIBKOFY0ELCCArw=="
+            crossorigin="anonymous"></script>    @include('admin.include.formValidation')
     <script>
-           $(function (){
-                $('.lazy').lazy();
-            })
+        $(function () {
+            $('.lazy').lazy();
+        })
     </script>
 @endpush
