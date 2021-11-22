@@ -96,7 +96,7 @@ class AppHelper
             return $this->site_configuration;
 
         $configs = SiteConfig::pluck('value', 'key');
-        $this->site_configuration = $configs;
+        $this->site_configuration = $configs->isEmpty() ? null : $configs;
 
         return $this->site_configuration;
     }
@@ -104,7 +104,7 @@ class AppHelper
     public function getSiteConfigByKey($key)
     {
         $configs = $this->getSiteConfigs();
-        return $configs[$key];
+        return $configs[$key] ?? null;
     }
 
     public function getSiteConfiguration()

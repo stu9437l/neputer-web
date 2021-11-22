@@ -12,10 +12,6 @@ use \Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
 /* Login */
 Route::POST('admin/login', ['as'=>'admin.login', 'uses'=> 'Admin\LoginController@login']);
 
