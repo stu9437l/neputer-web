@@ -1,3 +1,5 @@
+{{-- TODO :: Slider is now working properly  --}}
+
 @if(count($data['testimonial']) >0 )
 <section class="testinomial-section pad-tb">
     <div class="container">
