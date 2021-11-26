@@ -85,6 +85,41 @@ class SiteConfigsTableSeeder extends Seeder
                 'value' => '16294455029449_startup.svg',
                 'created_at' => now(),
                 'updated_at' => now()
+            ],[
+                'key' => 'about_image',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],[
+                'key' => 'contact_banner_image',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],[
+                'key' => 'our_team_image',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],[
+                'key' => 'development_process_image',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],[
+                'key' => 'blog_banner',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],[
+                'key' => 'career_image',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],[
+                'key' => 'our_client_banner',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
         ]);
     }
