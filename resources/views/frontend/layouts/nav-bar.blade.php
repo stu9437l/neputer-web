@@ -1,7 +1,7 @@
 
 <div class="onloadpage" id="page_loader">
     <div class="pre-content">
-        <div class="logo-pre"><img src="@if(isset($_settings['neputer_logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['neputer_logo']) }} @endif" alt="Logo" class="img-fluid" /></div>
+        <div class="logo-pre"><img src="@if(isset($_settings['logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['logo']) }} @endif" alt="Logo" class="img-fluid" /></div>
         <div class="pre-text-"><span>{{ $_settings['neputer_description'] ?? 'Insert Neputer Description' }}</span></div>
     </div>
 </div>
@@ -12,7 +12,7 @@
         <div class="menu-header">
             <div class="dsk-logo"><a class="nav-brand" href="/">
 
-                    <img src="@if(isset($_settings['neputer_logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['neputer_logo']) }} @endif" alt="Logo" class="mega-logo">
+                    <img src="@if(isset($_settings['logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['logo']) }} @endif" alt="Logo" class="mega-logo">
                 </a></div>
             <div class="custom-nav" role="navigation">
                 <ul class="nav-list">
