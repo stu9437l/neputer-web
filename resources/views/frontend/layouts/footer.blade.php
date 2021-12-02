@@ -36,6 +36,7 @@
                  {!!  $_settings['footer_1'] ?? 'Footer 1' !!}
                 </div>
                 <div class="col-lg-3 col-sm-6">
+                    {{}}
                     {!!  $_settings['footer_2'] ?? 'Footer 2' !!}
                 </div>
                 <div class="col-lg-3 col-sm-6">
