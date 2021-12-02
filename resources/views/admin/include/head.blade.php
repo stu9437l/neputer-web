@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="{{ asset('assets/panel/css/font-awesome-ie7.min.css')}}" />
     <![endif]-->
 
-    <!-- page specific plugin styles -->
-
     <!-- fonts -->
 
     <link rel="stylesheet" href="{{ asset('assets/panel/css/ace-fonts.css') }}" />
@@ -31,7 +29,6 @@
     <link rel="stylesheet" href="{{ asset('assets/panel/css/ace-ie.min.css')}}" />
     <![endif]-->
 
-    <!-- inline styles related to this page -->
 
     <!-- ace settings handler -->
 

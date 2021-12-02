@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from 198.74.61.72/themes/preview/ace/ by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 28 Feb 2014 17:44:06 GMT -->
 @include('admin.include.head')
 
 <body>
@@ -31,7 +30,6 @@
 @include('admin.include.scripts')
 </body>
 
-<!-- Mirrored from 198.74.61.72/themes/preview/ace/ by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 28 Feb 2014 17:45:06 GMT -->
 </html>
 
 

@@ -11,7 +11,7 @@
             </div>
             @php $i = 0 @endphp
             <div class="row">
-                @forelse(   $data['our-works'] as $our_work)
+                @forelse($data['our-works'] as $our_work)
                     <div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="{{ $i = $i + 0.2 }}s">
                         <div class="isotope_item hover-scale">
                             <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">

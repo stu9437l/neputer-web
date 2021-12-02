@@ -28,8 +28,8 @@
                 <div class="col-lg-3 col-sm-6  ftr-brand-pp">
                     <a class="navbar-brand mb30 mt30" href="#">
 
-                        @isset($_settings['neputer_logo'])
-                            @php $logo = \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['neputer_logo'] ?? 'N/A'); @endphp
+                        @isset($_settings['logo'])
+                            @php $logo = \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['logo'] ?? 'N/A'); @endphp
                         @endisset
                         <img src="{{ $logo ?? 'n/a' }}" alt="Neputer Logo" width="100">
                     </a>
