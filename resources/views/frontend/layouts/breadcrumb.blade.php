@@ -1,5 +1,6 @@
 
-    <section class="breadcrumb-area" @if(isset($banner))data-background="{{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration', $_settings[$banner]) }}" @endif>
+    <section class="breadcrumb-area"
+             @if(isset($banner))data-background="{{ \App\Facades\ViewHelperFacade::getImagePath('page', $banner) }}" @endif>
     <div class="text-block">
         <div class="container">
             <div class="row">

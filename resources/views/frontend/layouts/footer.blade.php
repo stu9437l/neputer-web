@@ -26,24 +26,69 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-sm-6  ftr-brand-pp">
-                    <a class="navbar-brand mb30 mt30" href="#">
-
+                    <a class="navbar-brand mt30 mb25" href="#">
                         @isset($_settings['logo'])
                             @php $logo = \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['logo'] ?? 'N/A'); @endphp
                         @endisset
                         <img src="{{ $logo ?? 'n/a' }}" alt="Neputer Logo" width="100">
                     </a>
-                 {!!  $_settings['footer_1'] ?? 'Footer 1' !!}
+                    <p>{!! $_settings['footer_section_description'] !!}</p>
+                    <a href="{!! $_settings['footer_button_link'] ?? '#' !!}" class="btn-main bg-btn3 lnk mt20">{!! $_settings['footer_button_text'] !!}
+                        <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    {!!  $_settings['footer_2'] ?? 'Footer 2' !!}
+                    <h5>Contact Us</h5>
+                    <ul class="footer-address-list ftr-details">
+                        @if($_settings['company_email'])
+                        <li>
+                            <span><i class="fas fa-envelope"></i></span>
+                            <p>Email <span> <a href="mailto:{{$_settings['company_email']}}">{{$_settings['company_email']}}</a></span></p>
+                        </li>
+                        @endif
+                        @if($_settings['company_phone'])
+                        <li>
+                            <span><i class="fas fa-phone-alt"></i></span>
+                            <p>Phone <span> <a href="tel:{{$_settings['company_phone']}}">{{$_settings['company_phone']}}</a></span></p>
+                        </li>
+                        @endif
+                        @if($_settings['company_address'])
+                        <li>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <p>Address <span> {{$_settings['company_address']}}</span></p>
+                        </li>
+                        @endif
+                    </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    {!!  $_settings['footer_3'] ?? 'Footer 3' !!}
+                    @if(isset($_menus['footer-1']))
+                    <h5>{{$_menus['footer-1']['title'] ?? 'N/A'}}</h5>
+                    <ul class="footer-address-list link-hover">
+                        @forelse($_menus['footer-1']['pages'] as $page)
+                            @if($page->page_type == 'link')
+                                <li><a href="{{$page->link}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
+                            @else
+                                <li><a href="{{route('page.menu',$page->slug)}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
+                            @endif
+                        @empty
+                        @endforelse
+                    </ul>
+                    @endif
 
                 </div>
                 <div class="col-lg-3 col-sm-6 footer-blog-">
-                    {!!  $_settings['footer_4'] ?? 'Footer 4' !!}
+                    @if(isset($_menus['footer-2']))
+                        <h5>{{$_menus['footer-2']['title'] ?? 'N/A'}}</h5>
+                        <ul class="footer-address-list link-hover">
+                            @forelse($_menus['footer-2']['pages'] as $page)
+                                @if($page->page_type == 'link')
+                                    <li><a href="{{$page->link}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
+                                @else
+                                    <li><a href="{{route('page.menu',$page->slug)}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
+                                @endif
+                            @empty
+                            @endforelse
+                        </ul>
+                    @endif
                 </div>
             </div>
         </div>
