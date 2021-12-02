@@ -121,6 +121,11 @@ class SiteConfigsTableSeeder extends Seeder
                 'value' => '16294455029449_startup.svg',
                 'created_at' => now(),
                 'updated_at' => now()
+            ],[
+                'key' => 'service_detail_image',
+                'value' => '16294455029449_startup.svg',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
         ]);
     }
