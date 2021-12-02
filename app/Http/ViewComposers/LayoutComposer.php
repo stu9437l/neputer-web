@@ -10,16 +10,12 @@ namespace App\Http\ViewComposers;
 
 
 use App\Facades\AppHelperFacade;
-use App\Model\Category;
-use App\Model\Currencies;
 use App\Model\MenuSection;
-use Illuminate\Support\Facades\App;
 use Illuminate\View\View;
 
 
 class LayoutComposer
 {
-
         public function compose(View $view)
         {
             $lang =  \Cookie::get('language');

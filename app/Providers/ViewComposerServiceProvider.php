@@ -20,6 +20,8 @@ class ViewComposerServiceProvider extends ServiceProvider
         View::composer(
             [
                 'frontend.home.index',
+                'frontend.layouts.header',
+                'frontend.layouts.footer',
                 'frontend.contact-us.index',
                 'frontend.career.index',
                 'frontend.service.index',

@@ -48,6 +48,10 @@ Route::get('client-review',['as'=>'client-review.index' ,'uses'=> 'Frontend\Test
 /* Career  */
 Route::get('career', ['as'=>'career.index' ,'uses'=> 'Frontend\CareerController@index']);
 
+/*Page*/
+Route::get('/page/menu/{menu}', ['as' => 'page.menu','uses' => 'Frontend\PageController@menu']);
+
+
 /* Blog Category  */
 Route::get('blog' ,['as'=>'blog-category.index' ,'uses'=> 'Frontend\BlogController@index']);
 Route::get('blog/{slug}' ,['as'=>'blog.show' ,'uses'=> 'Frontend\BlogController@show']);
@@ -62,6 +66,7 @@ Route::get('admin/request_quote/unseen/{id}' ,  ['as' => 'admin.request_quote.un
 //Enquiry For service page
 Route::post('service_enquiry' , ['as'=>'serviceForm.Submit', 'uses'=>'Admin\ServiceFormController@store']);
 Route::post('enquiry_career' ,  ['as' => 'career.form.post', 'uses' => 'Admin\CareerFormController@store']);
+
 
 //Mail Send to Career
 Route::get('career_mail/{id}', ['as'=>'career.getMail','uses'=>'Mail\CareerMailController']);

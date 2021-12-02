@@ -18,24 +18,14 @@ class MenuSectionTableSeeder extends Seeder
                 'hint' => 'Placed in site top bar',
             ],
             [
-                'title' => 'INFORMATION',
+                'title' => 'Footer First Menu',
                 'slug' => 'footer-1',
-                'hint' => 'Footer 1',
+                'hint' => 'Placed After Contact Us',
             ],
             [
-                'title' => 'MY ACCOUNT',
+                'title' => 'Footer Last Menu',
                 'slug' => 'footer-2',
-                'hint' => 'Footer 2',
-            ],
-            [
-                'title' => 'CUSTOMER SERVICE',
-                'slug' => 'footer-3',
-                'hint' => 'Footer 3',
-            ],
-            [
-                'title' => 'EXTRAS',
-                'slug' => 'footer 4',
-                'hint' => 'Footer 4',
+                'hint' => 'Placed at last section menu',
             ],
         ];
 

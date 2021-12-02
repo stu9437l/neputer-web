@@ -2,20 +2,21 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\Admin\BaseController;
 use App\Model\Contact;
 use App\Model\Pages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 
-class PageController
+class PageController extends BaseController
 {
     protected $view_path = 'frontend.page';
 
     public function menu($menu)
     {
         $data = [];
-        $data['row'] = Pages::select('title','content','page_image','seo_title','seo_desc','seo_keywords')->where('slug',$menu)->first();
+        $data['row'] = Pages::select('title','content','image','seo_title','seo_desc','seo_keys')->where('slug',$menu)->first();
         if(!$data['row']){
              session()->flash( 'Invalid request.');
             return redirect()->route('home');
@@ -55,6 +56,6 @@ class PageController
 
     public function termsConditions()
     {
-        return view(parent::loadDataToView($this->view_path.'.terms_condition'));
+        return view($this->view_path.'.terms_condition');
     }
 }
