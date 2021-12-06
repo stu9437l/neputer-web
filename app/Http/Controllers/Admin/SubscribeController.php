@@ -4,9 +4,9 @@
 namespace App\Http\Controllers\Admin;
 
 
-use App\Http\Requests\Subscribe\subscribeFormValidation;
-use App\MyLibraries\service\subscribeServices;
 use \Illuminate\Http\Request;
+use App\MyLibraries\service\subscribeServices;
+use App\Http\Requests\Subscribe\subscribeFormValidation;
 
 class SubscribeController extends BaseController
 {
@@ -20,9 +20,11 @@ class SubscribeController extends BaseController
 
     public function store(subscribeFormValidation  $request)
     {
-       $this->subscribeService->store($request->validated());
+        if (!$this->subscribeService->exists($request->email)) {
+            $this->subscribeService->store($request->validated());
+        }
 
-       $request->session()->flash('success','Subscribe Success');
+       $request->session()->flash('success', 'You have subscribed successfully!');
        return redirect()->back();
     }
 
