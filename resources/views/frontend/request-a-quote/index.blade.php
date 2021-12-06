@@ -8,7 +8,7 @@
 <!--Breadcrumb Area-->
 @include('frontend.layouts.breadcrumb',[
     'page'=>"Request a Quote",
-    'title'=> $_settings['quotes_title'],
+    'title'=> $_settings['quotes_title'] ?? 'N/A',
     'banner'=>'quote_banner_image'
 ])
 <!--End Breadcrumb Area-->
