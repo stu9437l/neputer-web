@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\MenuSection\EditFormValidation;
-use App\Model\MenuSection;
-use App\Model\Pages;
 use Carbon\Carbon;
+use App\Model\Pages;
+use Foundation\Lib\Cache;
+use App\Model\MenuSection;
 use Illuminate\Http\Request;
+use App\Http\Requests\MenuSection\EditFormValidation;
 
 class MenuSectionController extends BaseController
 {
@@ -57,8 +58,6 @@ class MenuSectionController extends BaseController
         $data['menu_section_page'] = $data['row']->pages()->select('pages.id')->orderBy('rank')->get();
         $data['pages'] = ['0' => 'Select'] + Pages::pluck('title', 'id')->toArray();
 
-//        dd($data['menu_section_page']->toArray());
-
         return view(parent::loadDefaultViewPath($this->view_path . '.edit'), compact('data'));
 
     }
@@ -72,7 +71,6 @@ class MenuSectionController extends BaseController
      */
     public function update(EditFormValidation $request, $id)
     {
-
         $data = [];
         $data['row'] = $this->model->find($id);
 
@@ -101,6 +99,8 @@ class MenuSectionController extends BaseController
         $data['row']->pages()->sync($page_data);
 
         $request->session()->flash('success-message', $this->panel . ' Updated Successfully!');
+
+        Cache::forget( Cache::CACHE_MENU_SECTION_KEY );
 
         return parent::requestRedirect($request, $id);
 
