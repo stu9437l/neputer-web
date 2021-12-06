@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Facades\AppHelperFacade;
 use App\Model\SiteConfig;
+use Foundation\Lib\Cache;
 use Illuminate\Http\Request;
+use App\Facades\AppHelperFacade;
 use Illuminate\Support\Facades\File;
-
 
 class SiteConfigController extends BaseController
 {
@@ -189,6 +189,7 @@ class SiteConfigController extends BaseController
         ));
 
 
+        Cache::forget( Cache::CACHE_SETTINGS_KEY );
         $request->session()->flash('success-message', $this->panel . ' updated Successfully!!');
         return redirect()->route($this->base_route . '.edit');
     }

@@ -14,9 +14,9 @@ class LayoutComposer
         {
             $lang =  \Cookie::get('language');
             $view->with('_lang', $lang?$lang:config('app.locale'));
-            $view->with('_lang_flag', $lang == 'en'?'en.jpg':'fr.jpg');
+            $view->with('_lang_flag', $lang == 'en' ? 'en.jpg' : 'fr.jpg');
             $view->with('_menus', $this->getMenuPages());
-            $view->with('_settings', AppHelperFacade::getSiteConfigs());
+            $view->with('_settings', $this->getSettings());
         }
 
         protected function getMenuPages()
@@ -32,6 +32,13 @@ class LayoutComposer
                         'pages'     => $menu->pages,
                     ],
                 ];
+            });
+        }
+
+        protected function getSettings()
+        {
+            return Cache::rememberForever(NeputerCache::resolveKey( NeputerCache::CACHE_SETTINGS_KEY ), function () {
+                return AppHelperFacade::getSiteConfigs();
             });
         }
 

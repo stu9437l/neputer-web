@@ -11,6 +11,8 @@ final class Cache
 
     const CACHE_MENU_SECTION_KEY  = 'menu-sections';
 
+    const CACHE_SETTINGS_KEY  = 'settings';
+
     public static function resolveKey($key)
     {
         return self::CACHE_BASE_KEY . $key;
