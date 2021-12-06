@@ -32,7 +32,8 @@
             "database/migrations"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Foundation\\": "app/Foundation/"
         }
     },
     "autoload-dev": {
