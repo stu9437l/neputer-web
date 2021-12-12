@@ -15,12 +15,12 @@
                     <div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="{{ $i = $i + 0.2 }}s">
                         <div class="isotope_item hover-scale">
                             <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-                                <a href="#"><img
+                                <a href="javascript:void(0);"><img
                                             src="{{ \App\Facades\ViewHelperFacade::getImagePath('our-work',$our_work->images) }}"
                                             alt="image" class="img-fluid lazy"/> </a>
                             </div>
                             <div class="item-info">
-                                <h4><a href="#">{{ $our_work->name }}</a></h4>
+                                <h4><a href="javascript:void(0);">{{ $our_work->name }}</a></h4>
                                 <p>{{ $our_work->platform }}</p>
                             </div>
                         </div>

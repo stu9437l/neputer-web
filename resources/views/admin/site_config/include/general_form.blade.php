@@ -1,6 +1,6 @@
 
 <div class="form-group">
-    {!! Form::label('domain_name', 'Domain Name', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
+    {!! Form::label('domain_name', 'Company Name', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
 
     <div class="col-sm-9">
         {!! Form::text('company', $data['settings']['company'] ?? null, ['class' => 'col-xs-10 col-sm-5','placeholder' => 'Company', 'autocomplete' => 'off']) !!}
