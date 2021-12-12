@@ -24,7 +24,7 @@ class EditFormValidation extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required | max:200',
+            'title' => 'required | max:200 | unique:blogs,title,'.$this->get('id'),
             'image' => 'mimes:jpg,jpeg,png,svg|max:2048,',
             'status' => 'required'
         ];
