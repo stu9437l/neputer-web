@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="fieldsets row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 fieldsets-custom">
                                 {{ Form::tel('phone', null ,['class' => 'mobileNum','id' => 'mobile','placeholder'=> 'Enter your mobile no. *']) }}
 
                                 @if($errors->has('phone'))

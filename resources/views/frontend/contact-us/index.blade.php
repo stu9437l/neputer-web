@@ -5,13 +5,10 @@
 @push('css')
     <link rel="stylesheet" href="{{asset('Frontend/css/intlTelInput.css')}}" type="text/css"/>
     <style>
-        .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel] {
-            width: 100% !important;
-            flex-basis: 100%;
-        }
-        .intl-tel-input {
-            flex-basis: 100%;
-            width: 100%;
+        #mobile-error {
+            position: absolute;
+            top: calc(100% + 3px);
+            left: 0;
         }
     </style>
 @endpush
