@@ -24,8 +24,8 @@ class AddFormValidation extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required | max:50',
-            'image' => 'mimes:jpg,jpeg,png|max:2048,',
+            'title' => 'required | max:200',
+            'image' => 'mimes:jpg,jpeg,png,svg|max:2048,',
             'status' => 'required',
             'description' => 'required'
         ];
