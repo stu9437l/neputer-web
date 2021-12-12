@@ -15,11 +15,12 @@
     </div>
 </div>
 
+
 <div class="form-group">
-    {!! Form::label('about_quote','Description', ['class'=>'col-sm-3 control-label no-padding-right']) !!}
+    {!! Form::label('about_quote','Quote', ['class'=>'col-sm-3 control-label no-padding-right']) !!}
 
     <div class="col-sm-6">
-        {!! Form::textarea('about_quote', $data['settings']['about_quote'] ?? null , ['class' => 'col-xs-7 col-sm-5 ckeditor', 'autocomplete' => 'off']) !!}
+        {!! Form::text('about_quote', $data['settings']['about_quote'] ?? null , ['class' => 'col-xs-7 col-sm-5']) !!}
     </div>
 </div>
 
