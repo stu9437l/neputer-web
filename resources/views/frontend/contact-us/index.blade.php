@@ -10,6 +10,12 @@
             top: calc(100% + 3px);
             left: 0;
         }
+        #customCheck-error{
+            position: absolute;
+            top: 22px;
+            left: -3px;
+            color: #fe2691;
+        }
     </style>
 @endpush
 
@@ -47,6 +53,7 @@
             rules: {
                 'name': "required",
                 'phone': "required",
+                'customCheck': "required",
                 'email':{
                     required: true,
                     email: true
