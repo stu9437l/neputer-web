@@ -16,7 +16,7 @@
                         <p>
                             {!! $data['about-us']->description !!}
                         </p>
-                        <p class="quote"> {{ $_settings['about_quote'] }} </p>
+                        <p class="quote"> {!! $_settings['about_quote'] ?? "insert quote" !!} </p>
                         <div class="user- mt30">
                             <div class="media">
                                 <div class="user-image bdr-radius"><img
