@@ -14,14 +14,13 @@
         {!! Form::text('about_subtitle', $data['settings']['about_subtitle'] ?? null , ['class' => 'col-xs-7 col-sm-5']) !!}
     </div>
 </div>
-<div class="form-group">
 
-    {!! Form::label('about_quote', 'Description', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
+<div class="form-group">
+    {!! Form::label('about_quote','Description', ['class'=>'col-sm-3 control-label no-padding-right']) !!}
 
     <div class="col-sm-6">
-        {!! Form::text('about_quote', $data['settings']['about_quote'] ?? null, ['class' => 'col-xs-7 col-sm-5','placeholder' => 'Description', 'autocomplete' => 'off']) !!}
+        {!! Form::textarea('about_quote', $data['settings']['about_quote'] ?? null , ['class' => 'col-xs-7 col-sm-5 ckeditor', 'autocomplete' => 'off']) !!}
     </div>
-
 </div>
 
 <!-- Client -->

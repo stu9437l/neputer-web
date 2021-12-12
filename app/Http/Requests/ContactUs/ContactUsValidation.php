@@ -13,10 +13,11 @@ class ContactUsValidation extends FormRequest
     {
         return [
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'subject' => 'required',
             'message' => 'required',
             'phone' => 'required| max:14 | min:10',
+            'tac' => 'accepted',
         ];
      }
 }
