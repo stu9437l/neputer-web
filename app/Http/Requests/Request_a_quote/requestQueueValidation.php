@@ -25,10 +25,11 @@ class requestQueueValidation extends FormRequest
     {
         return [
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'phone' => 'required| max:14 | min:10',
             'service' => 'required',
             'message' => 'required',
+            'tac' => 'accepted',
         ];
     }
 }
