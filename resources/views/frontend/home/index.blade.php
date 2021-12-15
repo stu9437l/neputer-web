@@ -36,10 +36,8 @@
 @endpush
 
 @section('content')
-
     <!--Start Slider -->
     @include('frontend.home.Section.slider')
-
     <!--Start About-->
     @include('frontend.home.Section.about')
 

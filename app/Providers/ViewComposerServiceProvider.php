@@ -34,6 +34,7 @@ class ViewComposerServiceProvider extends ServiceProvider
                 'frontend.request-a-quote.index',
                 'frontend.development-process.index',
                 'frontend.layouts.breadcrumb',
+                'frontend.layouts.nav-bar',
                 ],
             LayoutComposer::class
         );
