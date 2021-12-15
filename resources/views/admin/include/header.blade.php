@@ -7,8 +7,7 @@
         <div class="navbar-header pull-left">
             <a href="#" class="navbar-brand">
                 <small>
-                    <i class="icon-leaf"></i>
-                    Ace Admin
+                    {{ config('app.name', 'Neputer') }}
                 </small>
             </a><!-- /.brand -->
         </div><!-- /.navbar-header -->
