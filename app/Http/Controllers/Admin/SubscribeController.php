@@ -23,6 +23,10 @@ class SubscribeController extends BaseController
         if (!$this->subscribeService->exists($request->email)) {
             $this->subscribeService->store($request->validated());
         }
+        else{
+            $request->session()->flash('success', 'Your email is already exists!');
+            return redirect()->back();
+        }
 
        $request->session()->flash('success', 'You have subscribed successfully!');
        return redirect()->back();

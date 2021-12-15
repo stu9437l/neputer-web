@@ -6,7 +6,7 @@
                 <div class="common-heading ptag">
                     <span>{{ $_settings['client_title'] ?? 'Insert Client Title' }}</span>
                     <h2 class="mb30">{{  $_settings['client_subtitle'] ?? 'Insert Client Subtitle'}}</h2>
-                    <p class="mb30">{!! $_settings['client_description'] !!}</p>
+                    <p class="mb30">{!! $_settings['client_description'] ?? '' !!}</p>
                 </div>
             </div>
         </div>

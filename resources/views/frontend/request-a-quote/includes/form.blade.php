@@ -9,11 +9,11 @@
                 </div>
                 <br>
                 <div class="form-block">
-                    <form action="{{ route('request-a-quote.store') }}" method="post" name="feedback-form">
+                    <form action="{{ route('request-a-quote.store') }}" method="post" name="feedback-form" id="form-validation">
                         @csrf
                         <div class="fieldsets row">
                             <div class="col-md-6">
-                                {{ Form::text('name', null ,['placeholder'=> 'Enter your name *','required']) }}
+                                {{ Form::text('name', null ,['placeholder'=> 'Enter your name *',]) }}
                                 @if($errors->has('name'))
                                     <label class="has-error" for="name">{{ $errors->first('name') }}</label>
                                 @endif
@@ -22,15 +22,17 @@
                                 'field' => 'name'
                             ])
                             <div class="col-md-6">
-                                {{ Form::email('email', null ,['placeholder'=> 'Enter your email *','required']) }}
+                                {{ Form::email('email', null ,['placeholder'=> 'Enter your email *',
+                                 "pattern" => "([a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$)",
+                                'required']) }}
                                 @if($errors->has('email'))
                                     <label class="has-error" for="email">{{ $errors->first('email') }}</label>
                                 @endif
                             </div>
                         </div>
                         <div class="fieldsets row">
-                            <div class="col-md-6">
-                                {{ Form::tel('phone', null ,['placeholder'=> 'Enter your phone *','required']) }}
+                            <div class="col-md-6 custom-number-form-group">
+                                {{ Form::tel('phone', null ,['class' => 'mobileNum','id' => 'mobile','placeholder'=> 'Enter your mobile no. *']) }}
 
                                 @if($errors->has('phone'))
                                     <label class="has-error" for="phone">{{ $errors->first('phone') }}</label>
@@ -44,7 +46,7 @@
                             </div>
                         </div>
                         <div class="fieldsets">
-                            {{ Form::textarea('message', null ,['placeholder'=> 'Enter your message *','required']) }}
+                            {{ Form::textarea('message', null ,['placeholder'=> 'Enter your message *']) }}
 
                             @if($errors->has('message'))
                                 <label class="has-error" for="message">{{ $errors->first('message') }}</label>
@@ -55,7 +57,7 @@
                             <label class="custom-control-label" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Business Name.</label>
                         </div>-->
 
-                        <div class="custom-control">
+                        <div class="custom-control custom-checkbox">
                             <label><input type="checkbox" id="tac" name="tac" required> I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of {{ $_settings['company'] }}</label>
                         </div>
 
