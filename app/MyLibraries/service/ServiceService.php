@@ -30,6 +30,7 @@ class ServiceService
             ->select('id','title', 'description', 'image', 'order','slug')
             ->where('status', 1)
             ->orderBy('order')
+            ->limit(10)
             ->get();
     }
 

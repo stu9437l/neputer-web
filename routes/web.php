@@ -17,7 +17,7 @@ Route::POST('admin/login', ['as'=>'admin.login', 'uses'=> 'Admin\LoginController
 
 
 /* Frontend Part*/
-Route::get('/service', ['as'=>'service', 'uses'=>'Frontend\ServiceController@index']);
+Route::get('/our-services', ['as'=>'service', 'uses'=>'Frontend\ServiceController@index']);
 Route::get('/service/{slug}', ['as'=>'service.show', 'uses'=>'Frontend\ServiceController@show']);
 
 /* Frontend About Us*/
@@ -37,7 +37,7 @@ Route::post('contact-us', ['as'=>'contact.store', 'uses'=> 'Admin\ContactUsContr
 Route::post('subscribe', ['as'=>'subscribe.submit' ,'uses'=> 'Admin\SubscribeController@store']);
 
 /* Our Team*/
-Route::get('our-team',['as'=>'our-team.index' ,'uses'=> 'Frontend\OurTeamController@index']);
+Route::get('our-teams',['as'=>'our-team.index' ,'uses'=> 'Frontend\OurTeamController@index']);
 
 /* Development Process*/
 Route::get('development-process',['as'=>'development-process.index' ,'uses'=> 'Frontend\DevelopmentProcessController@index']);
@@ -263,17 +263,6 @@ Route::group(['middleware' => ['auth', 'admin-role-check'], 'prefix' => 'admin/'
     Route::get('contact/{id}', ['as' => 'contact.show', 'uses' => 'ContactUsController@show']);
 
 });
-
-
-
-//Route::post('store-order', ['as' => 'store-order', 'uses' => 'Shop\OrderController@index']);
-
-Route::group(['middleware' => ['auth', 'customer-role-check']], function () {
-
-    Route::get('shop/dashboard', ['as' => 'shop.customer.dashboard', 'uses' => 'Shop\Customer\DashboardController@index']);
-
-});
-
 
 Auth::routes();
 
