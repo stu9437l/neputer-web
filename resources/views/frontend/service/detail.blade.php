@@ -2,6 +2,39 @@
 
 @section('title','Service Detail')
 
+@push('css')
+    <link rel="stylesheet" href="{{asset('Frontend/css/intlTelInput.css')}}" type="text/css"/>
+    <style>
+        #mobile-error {
+            position: absolute;
+            top: calc(100% + 3px);
+            left: 0;
+        }
+        /*.custom-file label{*/
+        /*    display: initial !important;*/
+        /*}*/
+        /*.custom-file>.error{*/
+        /*    color: #fe2691;*/
+        /*    font-size: 14px;*/
+        /*    margin-top: 3px;*/
+        /*}*/
+
+        @media only screen and (max-width: 768px) {
+            .intl-tel-input {
+                 flex-basis: 100%;
+                width: 100%;
+            }
+            .custom-number-form-group{
+                padding-bottom: 15px;
+            }
+            #mobile-error {
+                padding-bottom: 15px;
+            }
+        }
+    </style>
+@endpush
+
+
 @section('content')
 <!--End Header -->
 <!--Breadcrumb Area-->
@@ -65,14 +98,14 @@
                             @csrf
                             <div class="fieldsets row">
                                 <div class="col-md-6 form-group">
-                                    {{ Form::text('name',null ,['placeholder'=> 'Enter your name *','required']) }}
+                                    {{ Form::text('name',null ,['placeholder'=> 'Enter your name *']) }}
                                     @if($errors->has('name'))
                                         <label class="has-error" for="name">{{ $errors->first('name') }}</label>
                                     @endif
                                 </div>
-                                <div class="col-md-6 form-group">
-                                    {{ Form::tel('phone', null ,['placeholder'=> 'Enter your phone No *','required']) }}
-                                    @if($errors->has('phone'))
+                                <div class="col-md-6 form-group custom-number-form-group">
+                                    {{ Form::tel('phone', null ,['class' => 'mobileNum','id' => 'mobile','placeholder'=> 'Enter your mobile no. *']) }}
+                                @if($errors->has('phone'))
                                         <label class="has-error" for="phone">{{ $errors->first('phone') }}</label>
                                     @endif
                                 </div>
@@ -80,7 +113,9 @@
                             </div>
                             <div class="fieldsets row">
                                 <div class="col-md-12 form-group">
-                                    {{ Form::email('email', null ,['placeholder'=> 'Enter your email *','required']) }}
+                                    {{ Form::email('email', null ,['placeholder'=> 'Enter your email *',
+                                 "pattern" => "([a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$)",
+                                'required']) }}
                                     @if($errors->has('email'))
                                         <label class="has-error" for="email">{{ $errors->first('email') }}</label>
                                     @endif
@@ -126,5 +161,26 @@
 
 
 @push('js')
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="{{asset('Frontend/js/jquery.maskedinput.js')}}"></script>
+    <script src="{{asset('Frontend/js/intlTelInput.js')}}"></script>
+    <script src="{{asset('Frontend/js/jquery.validate.js')}}"></script>
+    <script src="{{asset('Frontend/js/additional-methods.min.js')}}"></script>
+    @include('frontend.home.Section.contact_no_scripts')
     @include('frontend.career.includes.scripts')
+    <script>
+        $(document).ready(function () {
+            $('#service-form').validate({
+                rules: {
+                    'name': "required",
+                    'phone': "required",
+                    'email':{
+                        required: true,
+                        email: true
+                    },
+                },
+            });
+        });
+
+    </script>
 @endpush
