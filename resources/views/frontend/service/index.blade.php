@@ -30,7 +30,7 @@
             <div class="-cta-btn mt70">
                 <div class="free-cta-title v-center wow zoomInDown" data-wow-delay="1.3s">
                     <p>Hire a <span>Dedicated Developer</span></p>
-                    <a href="{{ route('') }}" class="btn-main bg-btn2 lnk">Hire Now<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                    <a href="{{ url('contact-us') }}" class="btn-main bg-btn2 lnk">Hire Now<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                 </div>
             </div>
         </div>
