@@ -24,7 +24,7 @@ class blogCategoryService
 
     public function find($id)
     {
-        return $this->model->where('id', $id)->orWhere('slug',$id)->first();
+        return $this->model->where('id', $id)->orWhere('slug',$id)->firstOrFail();
     }
 
     public function getLatestBlog()

@@ -3,7 +3,6 @@
          style="visibility: visible; animation-delay: 0.9s; animation-name: zoomInDown;">
         <p> <span>{{ $_settings['hire_title'] ?? 'Insert Hire Title' }}</span></p>
         <a href="{{ $_settings['hire_link'] ?? '/hire' }}" class="btn-main bg-btn2 lnk">{{ $_settings['hire_button_name'] ?? 'Insert Hire Title' }}<i class="fas fa-chevron-right fa-icon"></i><span
-                    class="circle"></span></a> ￼￼￼
-
+                    class="circle"></span></a>
     </div>
 </div>

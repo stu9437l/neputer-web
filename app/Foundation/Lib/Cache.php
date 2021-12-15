@@ -2,7 +2,7 @@
 
 namespace Foundation\Lib;
 
-final class Cache
+class Cache
 {
 
     const TIME_INTERVAL = '1440'; // 22 * 60

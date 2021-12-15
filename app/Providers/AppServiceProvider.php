@@ -12,9 +12,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(UrlGenerator $urlGenerator)
     {
-        if (app()->environment() === 'production') {
+        if (app()->environment() === 'production' || env('ENFORCE_HTTPS')) {
             $urlGenerator->forceScheme('https');
         }
+
     }
 
     /**

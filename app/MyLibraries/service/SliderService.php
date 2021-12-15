@@ -23,4 +23,9 @@ class SliderService
         return $this->model->select('id','caption','alt_text','image','rank')->where('status',1)->orderBy('rank')->limit($limit)->get();
     }
 
+    public function first()
+    {
+        return $this->model->select('id','caption','alt_text', 'caption_two','image','rank')->where('status',1)->first();
+    }
+
 }

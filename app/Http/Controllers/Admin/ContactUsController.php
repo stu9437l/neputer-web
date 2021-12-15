@@ -84,7 +84,7 @@ class ContactUsController extends BaseController
     {
        if($request->validated())
        {
-           $request->session()->flash('success', 'Form Submitted Successfully. Stay in touch !');
+           $request->session()->flash('success', 'Message sent successfully. Stay in touch !');
            $this->contactService->store($request->validated());
            return redirect()->back();
        }

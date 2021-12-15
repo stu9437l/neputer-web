@@ -51,10 +51,17 @@
                                 <label class="has-error" for="message">{{ $errors->first('message') }}</label>
                             @endif
                         </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked">
-                            <label class="custom-control-label" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Business Name.</label>
+<!--                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="tac" name="tac"  required>
+                            <label class="custom-control-label" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Neputer Tech</label>
+                        </div>-->
+
+                        <div class="custom-control">
+                            <label><input type="checkbox" id="tac" name="tac" required> I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of {{ $_settings['company'] }}</label>
                         </div>
+                        @if($errors->has('tac'))
+                            <label class="has-error" for="tac">{{ $errors->first('message') }}</label>
+                        @endif
                         <div class="fieldsets mt20"> <button type="submit" name="submit" class="lnk btn-main bg-btn">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button> </div>
                         <p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
                     </form>

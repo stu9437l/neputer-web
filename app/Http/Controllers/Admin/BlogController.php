@@ -189,6 +189,7 @@ class BlogController extends BaseController
 
         $data['row']->update([
             'title' => $request->get('title'),
+            'slug' => Str::slug($request->get('title')),
             'description' => $request->get('description'),
             'image' => $this->image_name,
             'status' => $request->get('status'),

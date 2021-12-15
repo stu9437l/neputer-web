@@ -46,7 +46,7 @@
                         <button type="button" role="presentation" class="owl-next">
                             <span aria-label="Next">›</span>
                         </button>
-                    </div>`
+                    </div>
                     <div class="owl-dots">
                         <button role="button" class="owl-dot"><span></span></button>
                     </div>

@@ -81,6 +81,7 @@
 
 
                     <div class="clearfix form-actions">
+
                         <div class="col-md-offset-3 col-md-9">
                             <button class="btn btn-info" type="submit">
                                 <i class="icon-ok bigger-110"></i>
@@ -91,6 +92,12 @@
                                 <i class="icon-undo bigger-110"></i>
                                 Reset
                             </button>
+
+                            <a class="btn btn-danger" href="{{ route('cache.clear') }}" title="Purge application cache" type="button">
+                                <i class="fa-times bigger-110"></i>
+                                Purge Cache
+                            </a>
+
                         </div>
                     </div>
 

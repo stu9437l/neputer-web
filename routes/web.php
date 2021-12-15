@@ -1,6 +1,6 @@
 <?php
 
-use \Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -277,38 +277,9 @@ Route::group(['middleware' => ['auth', 'customer-role-check']], function () {
 
 Auth::routes();
 
-Route::get('translate/{locale}', function ($locale) {
+Route::get('777-cache-clear', function () {
+    \Artisan::call('cache:clear');
 
-    if (in_array($locale, config('myPath.default_languages'))) {
-
-        \Cookie::queue('language', $locale, 43200);
-
-        return redirect()->back();
-    }
-
-    return redirect()->route('home');
-
-
-})->name('translate');
-
-
-Route::get('currency/{slug}', function ($slug) {
-
-    $currencies = \App\Model\Currencies::select('currency_code')
-//                        ->where('is_default', 1)
-        ->pluck('currency_code')
-        ->toArray();
-
-    $currencies = array_map('strtolower', $currencies);
-
-    if (in_array(strtolower($slug), $currencies)) {
-
-        \Cookie::queue('currency', $slug, 43200);
-
-        return redirect()->back();
-    }
-
-    return redirect()->route('home');
-
-
-})->name('currency');
+    request()->session()->flash('success', 'Application cache cleared successfully');
+    return redirect()->back();
+})->name('cache.clear')->middleware('auth');

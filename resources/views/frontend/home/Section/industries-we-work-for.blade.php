@@ -17,7 +17,7 @@
                     <div class="icon-set wow fadeIn" data-wow-delay="{{$i + 0.2}}">
                         <div class="work-card cd1">
                             <div class="icon-bg">
-                                <img src="{{ \App\Facades\ViewHelperFacade::getImagePath('industries-we-work-for',$industries->image)  }}" alt="Industries" class="lazy"/></div>
+                                <img style="width: 58px" src="{{ \App\Facades\ViewHelperFacade::getImagePath('industries-we-work-for',$industries->image)  }}" alt="Industries" class="lazy"/></div>
                             <p>{{ $industries->title }}</p>
                         </div>
                     </div>
