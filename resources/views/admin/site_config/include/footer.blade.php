@@ -1,6 +1,6 @@
 
 <div class="form-group">
-    {!! Form::label('footer_section_description', 'Neputer Footer Description', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
+    {!! Form::label('footer_section_description', 'Neputer Description', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
     <div class="col-sm-9">
         {!! Form::textarea('footer_section_description', $data['settings']['footer_section_description'] ?? null , ['class'=> 'col-xs-10 col-sm-5 ckeditor','autocomplete' => 'off']) !!}
     </div>
