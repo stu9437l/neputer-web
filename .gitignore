@@ -10,6 +10,7 @@
 /.idea
 /.vscode
 /.vagrant
+/.DS_
 Homestead.json
 Homestead.yaml
 npm-debug.log

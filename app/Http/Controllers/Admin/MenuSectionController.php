@@ -85,16 +85,18 @@ class MenuSectionController extends BaseController
         $data['row']->pages()->sync([]);
         $page_ids = $request->get('page');
         $page_data = [];
-        foreach ($page_ids as $key => $page_id) {
-
-            if ($page_id && !array_key_exists($page_id, $page_data)) {
-                $page_data[$page_id] = [
-                    'rank' => $key + 1,
-                    'created_at' => Carbon::now(),
-                    'updated_at' => Carbon::now(),
-                ];
+        if ($page_ids){
+            foreach ($page_ids as $key => $page_id) {
+                if ($page_id && !array_key_exists($page_id, $page_data)) {
+                    $page_data[$page_id] = [
+                        'rank' => $key + 1,
+                        'created_at' => Carbon::now(),
+                        'updated_at' => Carbon::now(),
+                    ];
+                }
             }
         }
+
 
         $data['row']->pages()->sync($page_data);
 
