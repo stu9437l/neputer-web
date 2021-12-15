@@ -45,8 +45,8 @@
                     <div class="common-heading">
                         <span>Let's work together</span>
                         <h2>We Love to Listen to Your Requirements</h2>
-                        <a href="javascript:void(0)" class="btn-outline">Estimate Project <i class="fas fa-chevron-right fa-icon"></i></a>
-                        <p class="cta-call">Or call us now <a href="tel:+1234567890"><i class="fas fa-phone-alt"></i> (123) 456 7890</a></p>
+                        <a href="{{ url('contact-us') }}" class="btn-outline">Estimate Project <i class="fas fa-chevron-right fa-icon"></i></a>
+                        <p class="cta-call">Or call us now <a href="tel:{{$_settings['company_phone']}}"><i class="fas fa-phone-alt"></i> {{$_settings['company_phone']}}</a></p>
                     </div>
                 </div>
             </div>
