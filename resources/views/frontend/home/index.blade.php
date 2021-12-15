@@ -2,6 +2,39 @@
 
 @section('title', 'Homepage')
 
+@push('css')
+    <link rel="stylesheet" href="{{asset('Frontend/css/intlTelInput.css')}}" type="text/css"/>
+    <style>
+        #mobile-error {
+            position: absolute;
+            top: calc(100% + 3px);
+            left: 0;
+        }
+        #tac-error{
+            position: absolute;
+            top: 32px;
+            left: -3px;
+            color: #fe2691;
+            font-size: 14px;
+        }
+        .custom-checkbox{
+            padding-left: 0px !important;
+        }
+        @media only screen and (max-width: 768px) {
+            .intl-tel-input {
+                flex-basis: 100%;
+                width: 100%;
+            }
+            .custom-number-form-group{
+                padding-bottom: 15px;
+            }
+            #mobile-error {
+                padding-bottom: 15px;
+            }
+        }
+    </style>
+@endpush
+
 @section('content')
 
     <!--Start Slider -->
@@ -36,9 +69,15 @@
 @endsection
 
 @push('js')
+    <script src="{{asset('Frontend/js/jquery.maskedinput.js')}}"></script>
+    <script src="{{asset('Frontend/js/intlTelInput.js')}}"></script>
+    <script src="{{asset('Frontend/js/jquery.validate.js')}}"></script>
+    <script src="{{asset('Frontend/js/additional-methods.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"
             integrity="sha512-eviLb3jW7+OaVLz5N3B5F0hpluwkLb8wTXHOTy0CyNaZM5IlShxX1nEbODak/C0k9UdsrWjqIBKOFY0ELCCArw=="
-            crossorigin="anonymous"></script>    @include('admin.include.formValidation')
+            crossorigin="anonymous"></script>
+    @include('frontend.home.Section.contact_no_scripts')
+    @include('frontend.home.Section.common_validation')
     <script>
         $(function () {
             $('.lazy').lazy();
