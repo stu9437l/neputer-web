@@ -1,5 +1,7 @@
 @extends('frontend.layouts.master')
 
+@section('title', 'Our Services')
+
 @section('content')
 
 @include('frontend.layouts.breadcrumb',[

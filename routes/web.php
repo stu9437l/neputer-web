@@ -17,7 +17,7 @@ Route::POST('admin/login', ['as'=>'admin.login', 'uses'=> 'Admin\LoginController
 
 
 /* Frontend Part*/
-Route::get('/service', ['as'=>'service', 'uses'=>'Frontend\ServiceController@index']);
+Route::get('/our-services', ['as'=>'service', 'uses'=>'Frontend\ServiceController@index']);
 Route::get('/service/{slug}', ['as'=>'service.show', 'uses'=>'Frontend\ServiceController@show']);
 
 /* Frontend About Us*/
