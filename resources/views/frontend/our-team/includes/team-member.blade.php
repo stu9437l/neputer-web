@@ -6,7 +6,6 @@
                 <div class="common-heading ptag">
                     <span>We Are Awesome</span>
                     <h2>Our Team Members</h2>
-                    <p class="mb0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
         </div>
