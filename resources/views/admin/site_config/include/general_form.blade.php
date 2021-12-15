@@ -11,19 +11,49 @@
     ])
 
 </div>
-
 <div class="form-group">
 
-    {!! Form::label('email', 'Email Address', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
+    {!! Form::label('company_phone', 'Phone No', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
 
     <div class="col-sm-9">
 
-        {!! Form::email('email', $data['settings']['email']??null, ['placeholder'=>'Enter Valid Email Address', 'class' => 'col-xs-10 col-sm-5']) !!}
+        {!! Form::text('company_phone', $data['settings']['company_phone']??null, ['placeholder'=>'Company Contact', 'class' => 'col-xs-10 col-sm-5']) !!}
 
     </div>
 
     @include('admin.include.form_validation_message', [
-        'field' => 'email'
+        'field' => 'company_phone'
+    ])
+
+</div>
+
+<div class="form-group">
+
+    {!! Form::label('company_email', 'Email Address', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
+
+    <div class="col-sm-9">
+
+        {!! Form::email('company_email', $data['settings']['company_email']??null, ['placeholder'=>'Enter Valid Email Address', 'class' => 'col-xs-10 col-sm-5']) !!}
+
+    </div>
+
+    @include('admin.include.form_validation_message', [
+        'field' => 'company_email'
+    ])
+
+</div>
+<div class="form-group">
+
+    {!! Form::label('company_address', 'Email Address', ['class' => 'col-sm-3 control-label no-padding-right']) !!}
+
+    <div class="col-sm-9">
+
+        {!! Form::text('company_address', $data['settings']['company_address']??null, ['placeholder'=>'Office Address', 'class' => 'col-xs-10 col-sm-5']) !!}
+
+    </div>
+
+    @include('admin.include.form_validation_message', [
+        'field' => 'company_address'
     ])
 
 </div>
