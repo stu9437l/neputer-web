@@ -274,4 +274,12 @@ Route::group(['middleware' => ['auth', 'customer-role-check']], function () {
 
 });
 
+
 Auth::routes();
+
+Route::get('777-cache-clear', function () {
+    \Artisan::call('cache:clear');
+
+    request()->session()->flash('success', 'Application cache cleared successfully');
+    return redirect()->back();
+})->name('cache.clear')->middleware('auth');
