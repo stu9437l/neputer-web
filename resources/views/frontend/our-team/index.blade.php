@@ -41,7 +41,7 @@
 <!--Breadcrumb Area-->
  @include('frontend.layouts.breadcrumb',[
     'page'=>'About',
-    'title'=>'Our leaders',
+    'title'=>'Our Teams',
      'banner'=> 'our_team_image'
 ])
 <!--End Breadcrumb Area-->
