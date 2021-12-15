@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from 198.74.61.72/themes/preview/ace/login.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 28 Feb 2014 17:46:42 GMT -->
 <head>
     <meta charset="utf-8"/>
-    <title>Login Page - Ace Admin</title>
+    <title>Neputer | Admin Panel</title>
 
     <meta name="description" content="User login page"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -58,11 +57,10 @@
                 <div class="login-container">
                     <div class="center">
                         <h1>
-                            <i class="icon-leaf green"></i>
-                            <span class="red">Ace</span>
-                            <span class="white">Application</span>
+                            <div class="logo-pre">
+                                <img style="width:200px;" src="
+{{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration', \Foundation\Lib\Meta::get('logo')) }}" alt="Logo" class="img-fluid" /></div>
                         </h1>
-                        <h4 class="blue">&copy; Company Name</h4>
                     </div>
 
                     <div class="space-6"></div>
