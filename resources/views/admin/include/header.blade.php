@@ -1,6 +1,9 @@
 <div class="navbar navbar-default" id="navbar">
     <script type="text/javascript">
-        try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+        try {
+            ace.settings.check('navbar', 'fixed')
+        } catch (e) {
+        }
     </script>
 
     <div class="navbar-container" id="navbar-container">
@@ -16,7 +19,8 @@
             <ul class="nav ace-nav">
                 <li class="light-blue">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="{{ViewHelper::getAssetPath('user.jpg', 'avatars') }}" alt="Jason's Photo" />
+                        <img class="nav-user-photo" src="{{ViewHelper::getAssetPath('user.jpg', 'avatars') }}"
+                             alt="Jason's Photo"/>
                         <span class="user-info">
 									<small>Welcome,</small>
                             {{ auth()->user()->name }}
@@ -34,9 +38,9 @@
                         </li>
 
                         <li>
-                            <a href="#">
-                                <i class="icon-user"></i>
-                                Profile
+                            <a href="{{ url('/') }}" target="_blank">
+                                <i class="icon-globe"></i>
+                                Frontend
                             </a>
                         </li>
 
