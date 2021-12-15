@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use ViewHelper;
 
 class Slider extends BaseModel
 {
@@ -9,4 +10,10 @@ class Slider extends BaseModel
         'image', 'alt_text', 'caption',
         'rank', 'status', 'caption_two'
     ];
+
+    public function getImage()
+    {
+        return ViewHelper::getImagePath('sliders', $this->image);
+    }
+
 }

@@ -8,21 +8,21 @@
 
     <div class="sidebar-shortcuts" id="sidebar-shortcuts">
         <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-            <button class="btn btn-success">
-                <i class="icon-signal"></i>
-            </button>
+            <a href="{{ route('admin.dashboard') }}" class="btn btn-success" title="Dashboard">
+                <i class="icon-dashboard"></i>
+            </a>
 
-            <button class="btn btn-info">
-                <i class="icon-pencil"></i>
-            </button>
+            <a href="{{ route('admin.menu-sections.index') }}" class="btn btn-info" title="Menu">
+                <i class="icon-sitemap"></i>
+            </a>
 
-            <button class="btn btn-warning">
+            <a href="{{ route('admin.users.index') }}" class="btn btn-warning" title="Users">
                 <i class="icon-group"></i>
-            </button>
+            </a>
 
-            <button class="btn btn-danger">
+            <a href="{{ route('admin.site-configs.edit') }}" class="btn btn-danger" title="Setting">
                 <i class="icon-cogs"></i>
-            </button>
+            </a>
         </div>
 
         <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
