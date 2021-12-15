@@ -49,7 +49,7 @@ Route::get('client-review',['as'=>'client-review.index' ,'uses'=> 'Frontend\Test
 Route::get('career', ['as'=>'career.index' ,'uses'=> 'Frontend\CareerController@index']);
 
 /*Page*/
-Route::get('/page/menu/{menu}', ['as' => 'page.menu','uses' => 'Frontend\PageController@menu']);
+Route::get('/page/{menu}', ['as' => 'page.menu','uses' => 'Frontend\PageController@menu']);
 
 
 /* Blog Category  */
