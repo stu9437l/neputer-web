@@ -53,7 +53,7 @@ class HomeController extends BaseController
     public function index()
     {
         $data = [];
-        $data['slider']   = $this->sliderService->getSlider(AppHelperFacade::getSiteConfigByKey('slider_limit') ?? self::DEFAULT_PAGINATION_LIMIT);
+        $data['slider']   = $this->sliderService->first();
         $data['about-us'] = $this->aboutUsService->getAboutUs();
         $data['services'] = $this->serviceService->getService(AppHelperFacade::getSiteConfigByKey('service_limit'));
         $data['clients']  = $this->clientService->getClients(AppHelperFacade::getSiteConfigByKey('client_limit'));
