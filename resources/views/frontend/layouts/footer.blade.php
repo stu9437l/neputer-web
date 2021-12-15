@@ -65,7 +65,7 @@
                     <ul class="footer-address-list link-hover">
                         @forelse($_menus['footer-1']['pages'] as $page)
                             @if($page->page_type == 'link')
-                                <li><a href="{{$page->link}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
+                                <li><a href="/{{$page->link}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
                             @else
                                 <li><a href="{{route('page.menu',$page->slug)}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
                             @endif
@@ -81,7 +81,8 @@
                         <ul class="footer-address-list link-hover">
                             @forelse($_menus['footer-2']['pages'] as $page)
                                 @if($page->page_type == 'link')
-                                    <li><a href="{{$page->link}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
+                                   
+                                    <li><a href="/{{$page->link}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
                                 @else
                                     <li><a href="{{route('page.menu',$page->slug)}}" @if($page->open_in =='new') target="_blank"@endif>{{$page->title}}</a></li>
                                 @endif
