@@ -1,7 +1,7 @@
 
 <div class="onloadpage" id="page_loader">
     <div class="pre-content">
-        <div class="logo-pre"><img src="@if(isset($_settings['logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['logo']) }} @endif" alt="Logo" class="img-fluid" /></div>
+        <div class="logo-pre"><img style="max-height: 60px;" src="@if(isset($_settings['logo'])){{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration',$_settings['logo']) }} @endif" alt="Logo" class="img-fluid" /></div>
         <div class="pre-text-"><span>{{ $_settings['neputer_description'] ?? 'Insert Neputer Description' }}</span></div>
     </div>
 </div>
