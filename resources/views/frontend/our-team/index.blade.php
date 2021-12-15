@@ -1,5 +1,8 @@
 @extends('frontend.layouts.master')
 
+@section('title', 'Our Teams')
+
+
 @section('content')
 
 <div class="popup-modal1">
