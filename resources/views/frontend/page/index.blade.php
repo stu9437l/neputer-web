@@ -1,6 +1,8 @@
 @extends('frontend.layouts.master')
 
-@section('title', $data['row']->title)
+@section('title', $data['row']->seo_title)
+@section('keywords', $data['row']->seo_keys)
+@section('description', $data['row']->seo_desc)
 
 @section('content')
 
