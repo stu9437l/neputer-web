@@ -1,6 +1,8 @@
 @extends('frontend.layouts.master')
 
 @section('title', 'Our Services')
+@section('keywords', 'Our Services')
+@section('description', 'Our Services')
 
 @section('content')
 
