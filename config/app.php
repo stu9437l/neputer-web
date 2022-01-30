@@ -167,6 +167,8 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
 
+        \HTMLMin\HTMLMin\HTMLMinServiceProvider::class,
+
     ],
 
     /*
@@ -229,6 +231,9 @@ return [
         'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
 
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+
+        'HTMLMin' => HTMLMin\HTMLMin\Facades\HTMLMin::class,
+
 
 
     ],
