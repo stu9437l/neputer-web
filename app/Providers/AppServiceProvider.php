@@ -16,6 +16,10 @@ class AppServiceProvider extends ServiceProvider
             $urlGenerator->forceScheme('https');
         }
 
+        if ($this->app->environment(['staging', 'production'])) {
+            $this->app->register(\Rollbar\Laravel\RollbarServiceProvider::class);
+        }
+
     }
 
     /**
