@@ -1,6 +1,9 @@
 @extends('frontend.layouts.master')
 
-@section('title','Service Detail')
+@section('title', $data['service']->seo_title)
+@section('keywords', $data['service']->seo_keywords)
+@section('description', $data['service']->seo_desc)
+
 
 @push('css')
     <link rel="stylesheet" href="{{asset('Frontend/css/intlTelInput.css')}}" type="text/css"/>
