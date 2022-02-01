@@ -12,5 +12,11 @@
     <link href="{{asset('Frontend/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('Frontend/css/responsive.css')}}" rel="stylesheet">
 
+    <style>
+        .dsk-logo .nav-brand img {
+            max-height: 55px;
+        }
+    </style>
+
     @stack('css')
 </head>
