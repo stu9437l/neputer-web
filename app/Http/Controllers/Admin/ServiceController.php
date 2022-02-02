@@ -108,7 +108,8 @@ class ServiceController extends BaseController
 
         $this->model->create([
             'title' => $request->get('title'),
-            'slug' => Str::slug($request->get('title').'-'.str_random(5).'-'.str_random(5)),
+//            'slug' => Str::slug($request->get('title').'-'.str_random(5).'-'.str_random(5)),
+            'slug' => Str::slug($request->get('title')),
             'description' => $request->get('description'),
             'image' => $this->image_name,
             'expertise_title' => $request->get('expertise_title'),
