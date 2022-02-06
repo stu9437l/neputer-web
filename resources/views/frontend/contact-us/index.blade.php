@@ -1,6 +1,8 @@
 @extends('frontend.layouts.master')
 
-@section('title','Contact-us')
+@section('title', $_settings['contact_page_seo_title'] ?? 'Contact Us')
+@section('keywords', $_settings['contact_page_seo_keywords'] ?? 'Contact Us')
+@section('description', $_settings['contact_page_seo_description'] ?? 'Contact Us')
 
 @push('css')
     <link rel="stylesheet" href="{{asset('Frontend/css/intlTelInput.css')}}" type="text/css"/>

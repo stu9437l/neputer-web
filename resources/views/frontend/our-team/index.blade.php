@@ -1,6 +1,8 @@
 @extends('frontend.layouts.master')
 
-@section('title', 'Our Teams')
+@section('title', $_settings['teams_page_seo_title'] ?? 'Our Teams')
+@section('keywords', $_settings['teams_page_seo_keywords'] ?? 'Our Teams')
+@section('description', $_settings['teams_page_seo_description'] ?? 'Our Teams')
 
 
 @section('content')
