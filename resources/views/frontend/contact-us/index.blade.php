@@ -51,7 +51,7 @@
 <!--Start Location-->
 <section class="contact-location pad-tb bglight">
     <div class="container">
-      {!! $_settings['neputer_location'] ?? 'Insert Neputer Location' !!}
+      {!! $_settings['neputer_location'] !!}
     </div>
 </section>
 <!--End Location-->
