@@ -1,8 +1,8 @@
 @extends('frontend.layouts.master')
 
-@section('title', 'Our Services')
-@section('keywords', 'Our Services')
-@section('description', 'Our Services')
+@section('title', $_settings['service_page_seo_title'] ?? 'Our Services')
+@section('keywords', $_settings['service_page_seo_keywords'] ?? 'Our Services')
+@section('description', $_settings['service_page_seo_description'] ?? 'Our Services')
 
 @section('content')
 

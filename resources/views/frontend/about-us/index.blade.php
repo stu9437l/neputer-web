@@ -1,5 +1,9 @@
 @extends('frontend.layouts.master')
 
+@section('title', $_settings['about_us_page_seo_title'] ?? 'About Us')
+@section('keywords', $_settings['about_us_page_seo_keywords'] ?? 'About Us')
+@section('description', $_settings['about_us_page_seo_description'] ?? 'About Us')
+
 @section('content')
 
 <!--Breadcrumb Area-->

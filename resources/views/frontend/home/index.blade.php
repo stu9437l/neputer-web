@@ -1,8 +1,8 @@
 @extends('frontend.layouts.master')
 
-@section('title', config('app.name'))
-@section('keywords', config('app.name'))
-@section('description', config('app.name'))
+@section('title', $_settings['home_page_seo_title'] ?? config('app.name'))
+@section('keywords', $_settings['home_page_seo_keywords'] ?? config('app.name'))
+@section('description', $_settings['home_page_seo_description'] ?? config('app.name'))
 
 @push('css')
     <link rel="stylesheet" href="{{asset('Frontend/css/intlTelInput.css')}}" type="text/css"/>

@@ -49,6 +49,11 @@
                                 </a>
                             </li>
                             <li>
+                                <a data-toggle="tab" href="#seo" aria-expanded="true">
+                                    SEO
+                                </a>
+                            </li>
+                            <li>
                                 <a data-toggle="tab" href="#others" aria-expanded="true">
                                     Others
                                 </a>
@@ -66,6 +71,9 @@
                             </div>
                             <div id="contact" class="tab-pane">
                                 @include('admin.site_config.include.page_settings')
+                            </div>
+                            <div id="seo" class="tab-pane">
+                                @include('admin.site_config.include.seo')
                             </div>
                             <div id="others" class="tab-pane">
                                 @include('admin.site_config.include.other')
