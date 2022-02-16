@@ -37,7 +37,7 @@ Route::post('contact-us', ['as'=>'contact.store', 'uses'=> 'Admin\ContactUsContr
 Route::post('subscribe', ['as'=>'subscribe.submit' ,'uses'=> 'Admin\SubscribeController@store']);
 
 /* Our Team*/
-Route::get('our-teams',['as'=>'our-team.index' ,'uses'=> 'Frontend\OurTeamController@index']);
+Route::get('our-team',['as'=>'our-team.index' ,'uses'=> 'Frontend\OurTeamController@index']);
 
 /* Development Process*/
 Route::get('development-process',['as'=>'development-process.index' ,'uses'=> 'Frontend\DevelopmentProcessController@index']);
@@ -48,8 +48,8 @@ Route::get('client-review',['as'=>'client-review.index' ,'uses'=> 'Frontend\Test
 /* Career  */
 Route::get('career', ['as'=>'career.index' ,'uses'=> 'Frontend\CareerController@index']);
 
-/*Page*/
-Route::get('/page/{menu}', ['as' => 'page.menu','uses' => 'Frontend\PageController@menu']);
+/* Dynamic Pages */
+Route::get('{menu}', ['as' => 'page.menu','uses' => 'Frontend\PageController@menu']);
 
 
 /* Blog Category  */
