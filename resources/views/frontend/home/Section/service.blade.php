@@ -19,7 +19,7 @@
                                         src="{{ \App\Facades\ViewHelperFacade::getImagePath('services',$service->image) }}"
                                         alt="service" class="img-fluid lazy"></div>
                             <h4>{{ $service->title }}</h4>
-                            <p> {!!  str_limit($service->description, 50)  !!}</p>
+                            <p> {!!  str_limit($service->description, 80)  !!}</p>
                             <p><a href="{{ route('service.show', [$service->slug]) }}"><i class="fas fa-chevron-right fa-icon"></i>Learn More</a></p>
                         </div>
                     </div>
