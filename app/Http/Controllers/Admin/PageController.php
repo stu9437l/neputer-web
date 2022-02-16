@@ -70,7 +70,7 @@ class PageController extends BaseController
                     $query->where('status', $request->get('filter_status') == 'active' ? 1 : 0);
                 }
             })
-            ->paginate(5);
+            ->paginate(25);
 
         return view(parent::loadDefaultViewPath($this->view_path . '.index'), compact('data'));
     }

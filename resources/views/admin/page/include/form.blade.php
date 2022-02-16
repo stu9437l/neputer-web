@@ -129,7 +129,7 @@
 
             <div class="radio">
                 <label>
-                    {!! Form::radio('status', 1, false, ['class'=>'ace']) !!}
+                    {!! Form::radio('status', 0, false, ['class'=>'ace']) !!}
                     <span class="lbl"> Inactive</span>
                 </label>
             </div>
