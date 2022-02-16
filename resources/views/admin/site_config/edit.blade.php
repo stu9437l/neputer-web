@@ -30,36 +30,36 @@
 
                     {!! Form::open(['url'=>route($base_route.'.update'), 'method'=>'put', 'enctype' => 'multipart/form-data', 'class' => 'form-horizontal']) !!}
                     <div class="tabbable">
-                        <ul class="nav nav-tabs" id="myTab">
+                        <ul class="nav nav-tabs" id="top-tab">
                             <li class="active">
-                                <a data-toggle="tab" href="#home" aria-expanded="false">
+                                <a data-toggle="tab" href="#home" aria-expanded="false" class="top-tab-button">
                                     <i class="green ace-icon fa fa-home bigger-120"></i>
                                     Home
                                 </a>
                             </li>
 
                             <li>
-                                <a data-toggle="tab" href="#contact" aria-expanded="true">
+                                <a data-toggle="tab" href="#contact" aria-expanded="true" class="top-tab-button">
                                     Page Settings
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#title_and_subtitle" aria-expanded="true">
+                                <a data-toggle="tab" href="#title_and_subtitle" aria-expanded="true" class="top-tab-button">
                                     Title And Subtitle
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#seo" aria-expanded="true">
+                                <a data-toggle="tab" href="#seo" aria-expanded="true" class="top-tab-button">
                                     SEO
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#others" aria-expanded="true">
+                                <a data-toggle="tab" href="#others" aria-expanded="true" class="top-tab-button">
                                     Others
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#footer" aria-expanded="true">
+                                <a data-toggle="tab" href="#footer" aria-expanded="true" class="top-tab-button">
                                     Footer
                                 </a>
                             </li>
@@ -90,6 +90,8 @@
 
                     <div class="clearfix form-actions">
 
+                        {!! Form::hidden('tab', '#home' , ['id' => 'tab_value'] ) !!}
+
                         <div class="col-md-offset-3 col-md-9">
                             <button class="btn btn-info" type="submit">
                                 <i class="icon-ok bigger-110"></i>
@@ -119,6 +121,14 @@
 @endsection
 @include('admin.include.dropify')
 @section('js_scripts')
+    <script>
+        /* Show the tab from where you have post*/
+        $('.top-tab-button').on('click', function (){
+            $('#tab_value').val($(this).attr('href'));
+        })
+        $('#top-tab a[href="{{ old('tab') }}"]').tab('show');
+
+    </script>
     @include('admin.include.jquery_ckeditor')
 @endsection
 
