@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
+
 /* Login */
 Route::POST('admin/login', ['as'=>'admin.login', 'uses'=> 'Admin\LoginController@login']);
 
@@ -263,8 +266,6 @@ Route::group(['middleware' => ['auth', 'admin-role-check'], 'prefix' => 'admin/'
     Route::get('contact/{id}', ['as' => 'contact.show', 'uses' => 'ContactUsController@show']);
 
 });
-
-Auth::routes();
 
 Route::get('777-cache-clear', function () {
     \Artisan::call('cache:clear');
