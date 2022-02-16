@@ -47,6 +47,7 @@ class SiteConfigController extends BaseController
      */
     public function update(Request $request)
     {
+        $tab = $request->get('tab');
         $imageName = $this->pluckToArray();
         $image = $imageName['logo'] ?? null;
         $belowProductSectionBanner = $imageName['below_product_section_banner'] ?? null;
@@ -191,7 +192,7 @@ class SiteConfigController extends BaseController
 
         Cache::forget( Cache::CACHE_SETTINGS_KEY );
         $request->session()->flash('success-message', $this->panel . ' updated Successfully!!');
-        return redirect()->route($this->base_route . '.edit');
+        return redirect()->route($this->base_route . '.edit')->withInput(['tab' => $tab]);
     }
 
 
