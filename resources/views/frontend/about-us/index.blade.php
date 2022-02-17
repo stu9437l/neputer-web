@@ -9,7 +9,7 @@
 <!--Breadcrumb Area-->
 @include('frontend.layouts.breadcrumb',[
    'title'=> 'About Company',
-    'banner'=> $_settings['about_image'] ?? 'about_image'
+    'banner'=> $_settings['about_image'],
 ])
 
 <!--End Breadcrumb Area-->

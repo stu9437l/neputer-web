@@ -44,7 +44,7 @@
 @include('frontend.layouts.breadcrumb',[
     'title'=> $data['service']->title,
     'description'=> $data['service']->description ,
-    'banner'=>'service_detail_image',
+    'banner'=> $_settings['service_detail_image'],
 ])
 
 
@@ -72,7 +72,7 @@
             <div class="col-lg-7">
                 <div class="text-l service-desc- pr25">
                   {!! $data['service']->service_description !!}
-                    <a href="#" class="btn-main bg-btn3 lnk mt20" data-toggle="modal" data-target="#modalform">Request a Service<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                    <a href="javascript:void(0);" class="btn-main bg-btn3 lnk mt20" data-toggle="modal" data-target="#modalform">Request a Service<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
 
                 </div>
             </div>
