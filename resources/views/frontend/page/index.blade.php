@@ -8,9 +8,9 @@
 
 <!--Breadcrumb Area-->
 @include('frontend.layouts.breadcrumb',[
-    'page'=> $data['row']->title,
     'title'=> $data['row']->title,
-    'banner'=> $data['row']->image
+    'banner'=> $data['row']->image,
+    'banner_for' => 'page',
 ])
 
 <section class="about-sec bg-gradient5 pad-tb">

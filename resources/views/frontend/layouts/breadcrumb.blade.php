@@ -1,7 +1,13 @@
-
+<?php
+if(isset($banner_for)) {
+    $image_dir = $banner_for;
+} else {
+    $image_dir = 'site_configuration';
+}
+?>
     <section class="breadcrumb-area"
 {{--             @if(isset($banner))data-background="{{ \App\Facades\ViewHelperFacade::getImagePath('page', $banner) }}" @endif>--}}
-             @if(isset($banner))data-background="{{ \App\Facades\ViewHelperFacade::getImagePath('site_configuration', $banner) }}" @endif>
+             @if(isset($banner))data-background="{{ \App\Facades\ViewHelperFacade::getImagePath($image_dir, $banner) }}" @endif>
     <div class="text-block">
         <div class="container">
             <div class="row">

@@ -43,7 +43,7 @@
         @endif
     </div>
     <div class="custom-control custom-checkbox">
-        <label><input type="checkbox" id="tac" name="tac" required> I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of {{ $_settings['company'] }}</label>
+        <label><input type="checkbox" id="tac" name="tac" required> I agree to the <a href="{{ route('page.menu', ['terms-and-conditions']) }}">Terms &amp; Conditions</a> of {{ $_settings['company'] }}</label>
     </div>
     @if($errors->has('tac'))
         <label class="has-error" for="tac">{{ $errors->first('message') }}</label>

@@ -100,6 +100,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-">
+{{--                            {!!  str_replace([ '%Year%', '%YEAR%', '%year%' ], '© ' .date('Y'), $_settings['copyright_message'] ?? 'Copyright Message here') !!}--}}
                             {!!  str_replace([ '%Year%', '%YEAR%', '%year%' ], '© ' .date('Y'), $_settings['copyright_message'] ?? 'Copyright Message here') !!}
                         </div>
                     </div>
