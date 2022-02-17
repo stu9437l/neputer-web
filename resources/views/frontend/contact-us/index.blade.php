@@ -43,7 +43,7 @@
 @include('frontend.layouts.breadcrumb',[
     'page'=>"Contact",
     'title'=>"Contact",
-    'banner'=>'contact_banner_image'
+    'banner'=> $_settings['contact_banner_image']
 ])
 <!--End Breadcrumb Area-->
 <!--Start Enquire Form-->
@@ -53,7 +53,7 @@
 <!--Start Location-->
 <section class="contact-location pad-tb bglight">
     <div class="container">
-      {!! $_settings['neputer_location'] !!}
+      {!! $_settings['neputer_location'] ?? '' !!}
     </div>
 </section>
 <!--End Location-->

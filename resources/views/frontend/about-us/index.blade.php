@@ -8,9 +8,8 @@
 
 <!--Breadcrumb Area-->
 @include('frontend.layouts.breadcrumb',[
-   'page'=>'About',
-   'title'=>'About Company',
-    'banner'=> 'about_image'
+   'title'=> 'About Company',
+    'banner'=> $_settings['about_image'],
 ])
 
 <!--End Breadcrumb Area-->

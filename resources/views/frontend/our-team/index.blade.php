@@ -13,7 +13,7 @@
 @include('frontend.layouts.breadcrumb',[
     'title'=>  'Our Team',
     'description'=> 'Our Team',
-    'banner'=>'our_team_image'
+    'banner' => $_settings['our_team_image'],
 ])
 
 <!--End Breadcrumb Area-->

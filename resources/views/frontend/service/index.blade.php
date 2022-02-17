@@ -9,7 +9,7 @@
 @include('frontend.layouts.breadcrumb',[
     'title'=>   $_settings['service_title'] ?? 'Our Services',
     'description'=>$_settings['service_subtitle'] ?? 'Our Services',
-    'banner'=>'service_image'
+    'banner'=> $_settings['service_overview_image']
 ])
 
     <!--Start Service-->
