@@ -58,7 +58,7 @@
                         </div>-->
 
                         <div class="custom-control custom-checkbox">
-                            <label><input type="checkbox" id="tac" name="tac" required> I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of {{ $_settings['company'] }}</label>
+                            <label><input type="checkbox" id="tac" name="tac" required> I agree to the <a href="{{ route('page.menu', ['terms-and-conditions']) }}">Terms &amp; Conditions</a> of {{ $_settings['company'] }}</label>
                         </div>
 
                         <div class="fieldsets mt20"> <button type="submit" name="submit" class="lnk btn-main bg-btn">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button> </div>

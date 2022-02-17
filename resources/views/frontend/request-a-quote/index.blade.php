@@ -1,6 +1,8 @@
 @extends('frontend.layouts.master')
 
-@section('title','Request-a-quote')
+@section('title', $_settings['request_quote_page_seo_title'] ?? 'Request a Quote')
+@section('keywords', $_settings['request_quote_page_seo_keywords'] ?? 'Request a Quote')
+@section('description', $_settings['request_quote_page_seo_description'] ?? 'Request a Quote')
 
 @push('css')
     <link rel="stylesheet" href="{{asset('Frontend/css/intlTelInput.css')}}" type="text/css"/>
@@ -42,7 +44,7 @@
 @include('frontend.layouts.breadcrumb',[
     'page'=>"Request a Quote",
     'title'=> $_settings['quotes_title'] ?? 'N/A',
-    'banner'=>'quote_banner_image'
+    'banner'=> $_settings['quote_banner_image']
 ])
 <!--End Breadcrumb Area-->
 <!--Start Enquire Form-->

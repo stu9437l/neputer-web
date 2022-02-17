@@ -51,6 +51,9 @@ Route::get('client-review',['as'=>'client-review.index' ,'uses'=> 'Frontend\Test
 /* Career  */
 Route::get('career', ['as'=>'career.index' ,'uses'=> 'Frontend\CareerController@index']);
 
+Route::get('request-a-quote' ,['as'=>'request-a-quote' ,'uses'=> 'Frontend\RequestQuoteController@index']);
+Route::post('request-a-quote' ,['as'=>'request-a-quote.store' ,'uses'=> 'Frontend\RequestQuoteController@store']);
+
 /* Dynamic Pages */
 Route::get('{menu}', ['as' => 'page.menu','uses' => 'Frontend\PageController@menu']);
 
@@ -59,8 +62,7 @@ Route::get('{menu}', ['as' => 'page.menu','uses' => 'Frontend\PageController@men
 Route::get('blog' ,['as'=>'blog-category.index' ,'uses'=> 'Frontend\BlogController@index']);
 Route::get('blog/{slug}' ,['as'=>'blog.show' ,'uses'=> 'Frontend\BlogController@show']);
 
-Route::get('request-a-quote' ,['as'=>'request-a-quote' ,'uses'=> 'Frontend\RequestQuoteController@index']);
-Route::post('request-a-quote' ,['as'=>'request-a-quote.store' ,'uses'=> 'Frontend\RequestQuoteController@store']);
+
 Route::get('admin/request_quote' ,  ['as' => 'admin.request_quote.index', 'uses' => 'Frontend\RequestQuoteController@adminIndex']);
 Route::get('admin/request_quote/{id}' ,  ['as' => 'admin.request_quote.show', 'uses' => 'Frontend\RequestQuoteController@show']);
 Route::delete('admin/request_quote/{id}' ,  ['as' => 'admin.request_quote.destroy', 'uses' => 'Frontend\RequestQuoteController@destroy']);
