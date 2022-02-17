@@ -18,7 +18,7 @@
                                 <li class="wow fadeIn" data-wow-delay="{{ $i = $i + 0.2 }}s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
                                     <div class="clients-logo"><img data-src="{{ \App\Facades\ViewHelperFacade::getImagePath('clients',$client->image) }}"
                                        title="{{ $client->title }}"
-                                       src="{{ asset('Frontend/images/about/office-1.jpg') }}" alt="{{ $client->title }}" class="img-fluid lazy"></div>
+                                       src="{{ asset('static/opacity-neputer.png') }}" alt="{{ $client->title }}" class="img-fluid lazy"></div>
                                 </li>
 
                             @empty
