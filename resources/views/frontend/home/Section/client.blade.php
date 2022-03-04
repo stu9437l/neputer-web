@@ -10,8 +10,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="clients-logos text-center col-12">
+                <div class="">
+                    <div class="clients-logos text-center">
                         <ul class=" text-center clearfix">
                             @php $i = 0 @endphp
                             @forelse($data['clients'] as $client)
